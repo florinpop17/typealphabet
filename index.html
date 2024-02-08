@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js" defer></script>
+        <title>The Typing Alphabet</title>
+    </head>
+    <body
+        class="bg-[#181028] text-white text-center flex flex-col justify-center items-center gap-8 p-4"
+    >
+        <h1 class="text-7xl font-bold mt-20">The Typing Alphabet</h1>
+        <p class="text-2xl leading-9">
+            Timer starts when you start typing <br />
+            Reset game by pressing enter
+        </p>
+
+        <div class="container mx-auto space-y-12">
+            <p
+                class="bg-white text-purple-950/20 rounded-xl shadow-xl px-12 py-8 text-5xl font-black break-words"
+                id="text"
+            >
+                Loading...
+            </p>
+
+            <input
+                class="text-purple-950 font-bold text-2xl p-4 rounded w-full"
+                type="text"
+                id="input"
+                placeholder="Start typing"
+            />
+        </div>
+
+        <p class="text-2xl tabular-nums" id="time">Time: 0.000s</p>
+        <p id="fastest" class="text-2xl tabular-nums hidden"></p>
+    </body>
+</html>
